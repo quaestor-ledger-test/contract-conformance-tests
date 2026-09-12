@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "ledger_id": "ledger-demo",
+  "batch_limit": 250,
+  "proof_required": true,
+  "retention_days": 0
+}
