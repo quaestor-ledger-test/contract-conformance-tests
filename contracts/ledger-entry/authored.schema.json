@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/quaestor-ledger-test/contract-conformance-tests/contracts/ledger-entry/authored.schema.json",
+  "$defs": {
+    "LedgerEntryV1": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "LedgerEntryV1",
+      "type": "object",
+      "properties": {
+        "version": { "type": "integer", "minimum": 1, "maximum": 1 },
+        "account_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "debit_minor": { "type": "integer", "minimum": 0, "maximum": 1000000000000 },
+        "credit_minor": { "type": "integer", "minimum": 0, "maximum": 1000000000000 },
+        "currency": { "type": "string", "minLength": 3, "maxLength": 3 },
+        "posted": { "type": "boolean" }
+      },
+      "required": ["version", "account_id", "debit_minor", "credit_minor", "currency", "posted"],
+      "unevaluatedProperties": false
+    }
+  }
+}
