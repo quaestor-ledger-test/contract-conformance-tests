@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/quaestor-ledger-test/contract-conformance-tests/contracts/observation-policy/authored.schema.json",
+  "$defs": {
+    "ObservationPolicyV1": {
+      "$id": "ObservationPolicyV1",
+      "type": "object",
+      "properties": {
+        "version": { "type": "integer", "minimum": 1, "maximum": 1 },
+        "ledger_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "batch_limit": { "type": "integer", "minimum": 1, "maximum": 1000 },
+        "proof_required": { "type": "boolean" },
+        "retention_days": { "type": "integer", "minimum": 1, "maximum": 3650 }
+      },
+      "required": ["version", "ledger_id", "batch_limit", "proof_required", "retention_days"],
+      "unevaluatedProperties": false
+    }
+  }
+}
