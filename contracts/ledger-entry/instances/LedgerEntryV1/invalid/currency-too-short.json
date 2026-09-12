@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "account_id": "cash:operating",
+  "debit_minor": 12500,
+  "credit_minor": 0,
+  "currency": "US",
+  "posted": true
+}
