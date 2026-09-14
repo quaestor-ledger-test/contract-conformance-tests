@@ -1,0 +1,12 @@
+{
+  "source_repo": "quaestor-ledger/quaestor-infra",
+  "head_sha": "5f99e89666358f6929e64b18c2689733e466564f",
+  "execution_mode": "independent-oracle",
+  "files": {
+    ".ores-infra.toml": "41fd16206513690db4f4aaaa7e22c006fbea6960",
+    "environments/preview/main.tf": "13a21f0c7fa96b0643c7c9403640b16ea8b9b635",
+    "environments/staging/main.tf": "5dbc341e503af2019493e60574db344b1d430aee",
+    "environments/production/main.tf": "363ff78404ac8c0e111c41dad10e0288807a3e06",
+    "modules/cloudflare/terraform/worker-shell/main.tf": "a1f6f57062065ae466b51d5e42452d1466e896f8"
+  }
+}
